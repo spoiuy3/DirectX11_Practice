@@ -2,16 +2,8 @@
 
 #include "Common.h"
 
-namespace library
-{
-    /*--------------------------------------------------------------------
-      Forward declarations
-    --------------------------------------------------------------------*/
+HRESULT InitWindow(_In_ HINSTANCE hInstance, _In_ INT nCmdShow);
+HRESULT InitDevice();
 
-    /*F+F+++F+++F+++F+++F+++F+++F+++F+++F+++F+++F+++F+++F+++F+++F+++F+++F
-      Function: Render
-
-      Summary:  Render the frame
-    F---F---F---F---F---F---F---F---F---F---F---F---F---F---F---F---F-F*/
-    void PrintHi();
-}
+void CleanupDevice();
+void Render();

@@ -1,7 +1,13 @@
+// Library::Common.h
 #pragma once
 
-#ifndef  UNICODE
+#ifndef UNICODE
 #define UNICODE
-#endif 
+#endif
 
 #include <windows.h>
+
+#include <d3d11_4.h>
+#include <DirectXColors.h>
+
+using namespace DirectX;
