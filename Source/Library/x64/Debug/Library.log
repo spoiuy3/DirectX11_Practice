@@ -528,34 +528,65 @@ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\d3d11.h(1205): me
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\d3d11_4.h(3786,40): warning C4820: 'D3D11_VIDEO_DECODER_BUFFER_DESC2': '4'바이트 채움 문자가 데이터 멤버 'D3D11_VIDEO_DECODER_BUFFER_DESC2::DataSize' 뒤에 추가되었습니다.
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\d3d11_4.h(3789,114): warning C4820: 'D3D11_VIDEO_DECODER_BUFFER_DESC2': '4'바이트 채움 문자가 데이터 멤버 'D3D11_VIDEO_DECODER_BUFFER_DESC2::IVSize' 뒤에 추가되었습니다.
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\d3d11_4.h(3793,5): warning C4820: 'D3D11_VIDEO_DECODER_BUFFER_DESC2': '4'바이트 채움 문자가 데이터 멤버 'D3D11_VIDEO_DECODER_BUFFER_DESC2::cBlocksStripeClear' 뒤에 추가되었습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\d3d11shader.h(58,39): warning C4820: '_D3D11_SIGNATURE_PARAMETER_DESC': '2'바이트 채움 문자가 데이터 멤버 '_D3D11_SIGNATURE_PARAMETER_DESC::ReadWriteMask' 뒤에 추가되었습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\d3d11shader.h(60,1): warning C4820: '_D3D11_SIGNATURE_PARAMETER_DESC': '4'바이트 채움 문자가 데이터 멤버 '_D3D11_SIGNATURE_PARAMETER_DESC::MinPrecision' 뒤에 추가되었습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\d3d11shader.h(77,41): warning C4820: '_D3D11_SHADER_VARIABLE_DESC': '4'바이트 채움 문자가 데이터 멤버 '_D3D11_SHADER_VARIABLE_DESC::uFlags' 뒤에 추가되었습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\d3d11shader.h(93,37): warning C4820: '_D3D11_SHADER_TYPE_DESC': '4'바이트 채움 문자가 데이터 멤버 '_D3D11_SHADER_TYPE_DESC::Offset' 뒤에 추가되었습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\d3d11shader.h(105,36): warning C4820: '_D3D11_SHADER_DESC': '4'바이트 채움 문자가 데이터 멤버 '_D3D11_SHADER_DESC::Version' 뒤에 추가되었습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\d3d11shader.h(158,1): warning C4820: '_D3D11_SHADER_INPUT_BIND_DESC': '4'바이트 채움 문자가 데이터 멤버 '_D3D11_SHADER_INPUT_BIND_DESC::NumSamples' 뒤에 추가되었습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\d3d11shader.h(181,36): warning C4820: '_D3D11_FUNCTION_DESC': '4'바이트 채움 문자가 데이터 멤버 '_D3D11_FUNCTION_DESC::Version' 뒤에 추가되었습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\d3d11shader.h(209,49): warning C4820: '_D3D11_FUNCTION_DESC': '4'바이트 채움 문자가 데이터 멤버 '_D3D11_FUNCTION_DESC::MinFeatureLevel' 뒤에 추가되었습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\d3d12shader.h(71,39): warning C4820: '_D3D12_SIGNATURE_PARAMETER_DESC': '2'바이트 채움 문자가 데이터 멤버 '_D3D12_SIGNATURE_PARAMETER_DESC::ReadWriteMask' 뒤에 추가되었습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\d3d12shader.h(73,1): warning C4820: '_D3D12_SIGNATURE_PARAMETER_DESC': '4'바이트 채움 문자가 데이터 멤버 '_D3D12_SIGNATURE_PARAMETER_DESC::MinPrecision' 뒤에 추가되었습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\d3d12shader.h(90,41): warning C4820: '_D3D12_SHADER_VARIABLE_DESC': '4'바이트 채움 문자가 데이터 멤버 '_D3D12_SHADER_VARIABLE_DESC::uFlags' 뒤에 추가되었습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\d3d12shader.h(106,37): warning C4820: '_D3D12_SHADER_TYPE_DESC': '4'바이트 채움 문자가 데이터 멤버 '_D3D12_SHADER_TYPE_DESC::Offset' 뒤에 추가되었습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\d3d12shader.h(118,36): warning C4820: '_D3D12_SHADER_DESC': '4'바이트 채움 문자가 데이터 멤버 '_D3D12_SHADER_DESC::Version' 뒤에 추가되었습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\d3d12shader.h(173,1): warning C4820: '_D3D12_SHADER_INPUT_BIND_DESC': '4'바이트 채움 문자가 데이터 멤버 '_D3D12_SHADER_INPUT_BIND_DESC::uID' 뒤에 추가되었습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\d3d12shader.h(215,36): warning C4820: '_D3D12_FUNCTION_DESC': '4'바이트 채움 문자가 데이터 멤버 '_D3D12_FUNCTION_DESC::Version' 뒤에 추가되었습니다.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\d3d12shader.h(243,49): warning C4820: '_D3D12_FUNCTION_DESC': '4'바이트 채움 문자가 데이터 멤버 '_D3D12_FUNCTION_DESC::MinFeatureLevel' 뒤에 추가되었습니다.
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(22,127): warning C4668: '_MANAGED'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(22,142): warning C4668: '_M_CEE'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(281,100): warning C4668: '__arm__'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(281,111): warning C4668: '__aarch64__'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(126,33): warning C4365: '초기화 중': 'LONG'에서 'UINT'(으)로의 변환입니다. signed 또는 unsigned가 일치하지 않습니다.
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(127,34): warning C4365: '초기화 중': 'LONG'에서 'UINT'(으)로의 변환입니다. signed 또는 unsigned가 일치하지 않습니다.
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(46): warning C4715: 'WindowProc': 모든 제어 경로에서 값을 반환하지는 않습니다.
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(239): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(238) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(239) : 참고: 이 줄에서 호출 피드
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(235): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(234) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(235) : 참고: 이 줄에서 호출 피드
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(230): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(229) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(230) : 참고: 이 줄에서 호출 피드
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(182): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(181) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(182) : 참고: 이 줄에서 호출 피드
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(165): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(164) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(165) : 참고: 이 줄에서 호출 피드
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(157): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(149) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'driverTypeIndex' 범위
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(157) : 참고: 이 줄에서 호출 피드
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(152): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(149) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'driverTypeIndex' 범위
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(152) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(138,33): warning C4365: '초기화 중': 'LONG'에서 'UINT'(으)로의 변환입니다. signed 또는 unsigned가 일치하지 않습니다.
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(139,34): warning C4365: '초기화 중': 'LONG'에서 'UINT'(으)로의 변환입니다. signed 또는 unsigned가 일치하지 않습니다.
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(58): warning C4715: 'WindowProc': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(360): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(359) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(360) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(325): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(324) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(325) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(306): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(303) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(306) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(283): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(280) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(283) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(251): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(250) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(251) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(247): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(246) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(247) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(427): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(420) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(427) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(242): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(241) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(242) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(194): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(193) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(194) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(177): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(176) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(177) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(169): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(161) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'driverTypeIndex' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(169) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(164): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(161) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'driverTypeIndex' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(164) : 참고: 이 줄에서 호출 피드
   Library.vcxproj -> C:\GameGraphicProgramming\Build\x64\Debug\Libraryd.lib
   하위 디렉터리 또는 파일 C:\GameGraphicProgramming\Build\..\Library\x64\Debug이(가) 이미 있습니다.
   C:\GameGraphicProgramming\Build\x64\Debug\Game.exe
@@ -563,4 +594,6 @@ C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(152): warning C5045: 컴�
   C:\GameGraphicProgramming\Build\x64\Debug\Libraryd.idb
   C:\GameGraphicProgramming\Build\x64\Debug\Libraryd.lib
   C:\GameGraphicProgramming\Build\x64\Debug\Libraryd.pdb
-          5개 파일이 복사되었습니다.
+  C:\GameGraphicProgramming\Build\x64\Debug\PS.cso
+  C:\GameGraphicProgramming\Build\x64\Debug\VS.cso
+          7개 파일이 복사되었습니다.
