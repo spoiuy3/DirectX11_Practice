@@ -11,6 +11,7 @@ void Render();
 struct SimpleVertex
 {
 	XMFLOAT3 Pos;
+	XMFLOAT4 Color;
 };
 
 HRESULT CompileShaderFromFile(
@@ -19,3 +20,5 @@ HRESULT CompileShaderFromFile(
 	_In_ PCSTR pszShaderModel, // Shader target
 	_Outptr_ ID3DBlob** ppBlobOut // ID3DBlob out
 );
+
+struct ConstantBuffer{ XMMATRIX World; XMMATRIX View; XMMATRIX Projection; };

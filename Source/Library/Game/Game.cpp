@@ -15,18 +15,20 @@ ID3D11VertexShader* g_pVertexShader = nullptr;
 ID3D11PixelShader* g_pPixelShader = nullptr;
 ID3D11Buffer* g_pVertexBuffer = nullptr;
 ID3D11InputLayout* g_pVertexLayout = nullptr;
+ID3D11Buffer* g_pIndexBuffer = nullptr;
+ID3D11Buffer* g_pConstantBuffer = nullptr; 
+XMMATRIX g_worldMatrix; 
+XMMATRIX g_worldMatrix2;
+XMMATRIX g_viewMatrix; 
+XMMATRIX g_projectionMatrix;
+ID3D11Texture2D* g_pDepthStencil = nullptr; 
+ID3D11DepthStencilView* g_pDepthStencilView = nullptr;
 
-
-SimpleVertex sVertices[] =
-{
-	{XMFLOAT3(0.0f, 0.5f, 0.5f)},
-	{XMFLOAT3(0.5f, -0.5f, 0.5f)},
-	{XMFLOAT3(-0.5f, -0.5f, 0.5f)},
-};
 
 HWND g_hWnd = nullptr;
 HINSTANCE g_hInstance = nullptr;
 LPCWSTR g_pszWindowName = L"2022105448 김수연 Lab02";
+
 
 LPCWSTR g_pszWindowClassName = L"GGPWindowClass";
 
@@ -260,6 +262,8 @@ HRESULT InitDevice()
 	vp.TopLeftY = 0;
 	g_pImmediateContext->RSSetViewports(1, &vp);
 
+	///////////////////////////////////////////////////////////////////
+
 	ID3DBlob* pVertexShaderBlob = nullptr;
 	hr = CompileShaderFromFile(L"../Library/Lab02.fx", "VS", "vs_5_0", &pVertexShaderBlob);
 	if (FAILED(hr))
@@ -306,11 +310,21 @@ HRESULT InitDevice()
 		return hr;
 	}
 
-
+	SimpleVertex sVertices[] =
+	{
+		{.Pos = XMFLOAT3(-1.0f,  1.0f, -1.0f),.Color = XMFLOAT4(0.0f, 0.0f, 1.0f, 1.0f) },
+		{.Pos = XMFLOAT3(1.0f,  1.0f, -1.0f),.Color = XMFLOAT4(0.0f, 1.0f, 0.0f, 1.0f) },
+		{.Pos = XMFLOAT3(1.0f,  1.0f,  1.0f),.Color = XMFLOAT4(0.0f, 1.0f, 1.0f, 1.0f) },
+		{.Pos = XMFLOAT3(-1.0f,  1.0f,  1.0f),.Color = XMFLOAT4(1.0f, 0.0f, 0.0f, 1.0f) },
+		{.Pos = XMFLOAT3(-1.0f, -1.0f, -1.0f),.Color = XMFLOAT4(1.0f, 0.0f, 1.0f, 1.0f) },
+		{.Pos = XMFLOAT3(1.0f, -1.0f, -1.0f),.Color = XMFLOAT4(1.0f, 1.0f, 0.0f, 1.0f) },
+		{.Pos = XMFLOAT3(1.0f, -1.0f,  1.0f),.Color = XMFLOAT4(1.0f, 1.0f, 1.0f, 1.0f) },
+		{.Pos = XMFLOAT3(-1.0f, -1.0f,  1.0f),.Color = XMFLOAT4(0.0f, 0.0f, 0.0f, 1.0f) }
+	};
 
 	D3D11_BUFFER_DESC bd = {};
 	bd.Usage = D3D11_USAGE_DEFAULT;
-	bd.ByteWidth = sizeof(SimpleVertex) * 3;
+	bd.ByteWidth = sizeof(SimpleVertex) * 8;
 	bd.BindFlags = D3D11_BIND_VERTEX_BUFFER;
 	bd.CPUAccessFlags = 0;
 	D3D11_SUBRESOURCE_DATA initData = {};
@@ -336,17 +350,10 @@ HRESULT InitDevice()
 
 	D3D11_INPUT_ELEMENT_DESC layouts[] =
 	{
-		{"POSITION", //SemanticName
-		0, //SemanticIndex
-		DXGI_FORMAT_R32G32B32_FLOAT, //Format
-		0, //InputSlot
-		0, //AlignedByteOffset;
-		D3D11_INPUT_PER_VERTEX_DATA, //InputSlotClass;
-		0 //InstanceDataStepRate
-		},
+		{"POSITION", 0, DXGI_FORMAT_R32G32B32_FLOAT, 0, 0, D3D11_INPUT_PER_VERTEX_DATA, 0 },
+		{"COLOR", 0, DXGI_FORMAT_R32G32B32A32_FLOAT, 0, 12, D3D11_INPUT_PER_VERTEX_DATA, 0 }
 	};
 	UINT uNumElements = ARRAYSIZE(layouts);
-
 
 	hr = g_pd3dDevice->CreateInputLayout(
 		layouts,
@@ -359,9 +366,83 @@ HRESULT InitDevice()
 	if (FAILED(hr))
 		return hr;
 	g_pImmediateContext->IASetInputLayout(g_pVertexLayout);
+
+	WORD sIndices[] = { 3,1,0,2,1,3,0,5,4,1,5,0,3,4,7,0,4,3,1,6,5,2,6,1,2,7,6,3,7,2,6,4,5,7,4,6, };
+
+	bd = {}; 
+	bd.Usage = D3D11_USAGE_DEFAULT; 
+	bd.ByteWidth = sizeof(WORD) * 36; 
+	bd.BindFlags = D3D11_BIND_INDEX_BUFFER; 
+	bd.CPUAccessFlags = 0; 
+
+	initData = {}; 
+	initData.pSysMem = sIndices;
+
+	hr = g_pd3dDevice->CreateBuffer(
+		&bd, 
+		&initData, 
+		&g_pIndexBuffer
+	); 
+
+	if(FAILED(hr)) 
+		return hr;
+
+	g_pImmediateContext->IASetIndexBuffer(g_pIndexBuffer, DXGI_FORMAT_R16_UINT, 0);
+
 	g_pImmediateContext->IASetPrimitiveTopology(
 		D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST
 	);
+
+	bd = {}; 
+	bd.ByteWidth = sizeof(ConstantBuffer); 
+	bd.Usage = D3D11_USAGE_DEFAULT; 
+	bd.BindFlags = D3D11_BIND_CONSTANT_BUFFER; 
+	bd.CPUAccessFlags = 0; 
+	hr = g_pd3dDevice->CreateBuffer(&bd, nullptr, &g_pConstantBuffer); 
+	if (FAILED(hr))
+		return hr;
+
+	g_worldMatrix = XMMatrixIdentity(); 
+	g_worldMatrix2 = XMMatrixIdentity();
+	XMVECTOR eye = XMVectorSet(0.0f, 1.0f, -5.0f, 0.0f); 
+	XMVECTOR at = XMVectorSet(0.0f, 1.0f, 0.0f, 0.0f); 
+	XMVECTOR up = XMVectorSet(0.0f, 1.0f, 0.0f, 0.0f);
+	g_viewMatrix = XMMatrixLookAtLH(eye, at, up); 
+	g_projectionMatrix = XMMatrixPerspectiveFovLH(
+		XM_PIDIV2, //FoV (90)
+		width / (FLOAT)height, //aspect ratio
+		0.01f,  //near clipping plane
+		100.0f  //far clipping plane
+	);
+	
+	D3D11_TEXTURE2D_DESC descDepth = {}; 
+	descDepth.Width = width; 
+	descDepth.Height = height; 
+	descDepth.MipLevels = 1; 
+	descDepth.ArraySize = 1; 
+	descDepth.Format = DXGI_FORMAT_D24_UNORM_S8_UINT; 
+	descDepth.SampleDesc.Count = 1; 
+	descDepth.SampleDesc.Quality = 0; 
+	descDepth.Usage = D3D11_USAGE_DEFAULT; 
+	descDepth.BindFlags = D3D11_BIND_DEPTH_STENCIL; 
+	descDepth.CPUAccessFlags = 0;
+	descDepth.MiscFlags = 0; 
+
+	hr = g_pd3dDevice->CreateTexture2D(&descDepth, nullptr, &g_pDepthStencil); 
+
+	if (FAILED(hr))
+		return hr;
+
+	D3D11_DEPTH_STENCIL_VIEW_DESC descDSV = {}; 
+	descDSV.Format = descDepth.Format; 
+	descDSV.ViewDimension = D3D11_DSV_DIMENSION_TEXTURE2D; 
+	descDSV.Texture2D.MipSlice = 0; 
+	hr = g_pd3dDevice->CreateDepthStencilView(g_pDepthStencil, &descDSV, &g_pDepthStencilView); 
+	if (FAILED(hr))
+		return hr; 
+	g_pImmediateContext->OMSetRenderTargets(1, &g_pRenderTargetView, g_pDepthStencilView); 
+	if (FAILED(hr))
+		return hr;
 
 	return S_OK;
 }
@@ -381,17 +462,58 @@ void CleanupDevice()
 	if (g_pImmediateContext) g_pImmediateContext->Release();
 	if (g_pd3dDevice1) g_pd3dDevice1->Release();
 	if (g_pd3dDevice) g_pd3dDevice->Release();
-
+	if (g_pConstantBuffer) g_pConstantBuffer->Release();
+	if (g_pDepthStencil) g_pDepthStencil->Release(); 
+	if (g_pDepthStencilView) g_pDepthStencilView->Release();
 }
 
 void Render()
 {
-	g_pImmediateContext->ClearRenderTargetView(g_pRenderTargetView, Colors::MidnightBlue);
-	g_pImmediateContext->VSSetShader(g_pVertexShader, nullptr, 0);
-	g_pImmediateContext->PSSetShader(g_pPixelShader, nullptr, 0);
-	g_pImmediateContext->Draw(3, 0);
-	g_pSwapChain->Present(0, 0);
+	static float t = 0.0f;
+	if (g_driverType == D3D_DRIVER_TYPE_REFERENCE)
+	{
+		t += (float)XM_PI * 0.0125f;
+	}
+	else
+	{
+		static ULONGLONG timeStart = 0;
+		ULONGLONG timeCur = GetTickCount64();
+		if (timeStart == 0)timeStart = timeCur;
+		t = (timeCur - timeStart) / 1000.0f;
+	}
 
+	g_worldMatrix = XMMatrixRotationY(t);
+
+	g_worldMatrix2 = XMMatrixScaling(0.3f, 0.3f, 0.3f);
+	g_worldMatrix2 *= XMMatrixRotationY(-t*5);
+	g_worldMatrix2 *= XMMatrixTranslation(4.0f, 0.0f, 0.0f);
+	g_worldMatrix2 *= XMMatrixRotationY(t);
+	
+
+
+
+	g_pImmediateContext->ClearRenderTargetView(g_pRenderTargetView, Colors::MidnightBlue);
+	g_pImmediateContext->ClearDepthStencilView(g_pDepthStencilView, D3D11_CLEAR_DEPTH, 1.0f, 0);
+
+	ConstantBuffer cb1; 
+	cb1.World = XMMatrixTranspose(g_worldMatrix); 
+	cb1.View = XMMatrixTranspose(g_viewMatrix); 
+	cb1.Projection = XMMatrixTranspose(g_projectionMatrix); 
+	g_pImmediateContext->UpdateSubresource(g_pConstantBuffer, 0, nullptr, &cb1, 0, 0);
+
+	g_pImmediateContext->VSSetShader(g_pVertexShader, nullptr, 0);
+	g_pImmediateContext->VSSetConstantBuffers(0, 1, &g_pConstantBuffer);
+	g_pImmediateContext->PSSetShader(g_pPixelShader, nullptr, 0);
+	g_pImmediateContext->DrawIndexed(36, 0, 0);
+
+	ConstantBuffer cb2;
+	cb2.World = XMMatrixTranspose(g_worldMatrix2);
+	cb2.View = XMMatrixTranspose(g_viewMatrix);
+	cb2.Projection = XMMatrixTranspose(g_projectionMatrix);
+	g_pImmediateContext->UpdateSubresource(g_pConstantBuffer, 0, nullptr, &cb2, 0, 0);
+
+	g_pImmediateContext->DrawIndexed(36, 0, 0);
+	g_pSwapChain->Present(0, 0);
 }
 
 

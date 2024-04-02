@@ -548,45 +548,62 @@ C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(22,
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(22,142): warning C4668: '_M_CEE'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(281,100): warning C4668: '__arm__'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
 C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\um\DirectXMath.h(281,111): warning C4668: '__aarch64__'은(는) 전처리기 매크로로 정의되어 있지 않으므로 '#if/#elif'에 해당하는 '0'으로 바뀝니다.
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(138,33): warning C4365: '초기화 중': 'LONG'에서 'UINT'(으)로의 변환입니다. signed 또는 unsigned가 일치하지 않습니다.
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(139,34): warning C4365: '초기화 중': 'LONG'에서 'UINT'(으)로의 변환입니다. signed 또는 unsigned가 일치하지 않습니다.
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(58): warning C4715: 'WindowProc': 모든 제어 경로에서 값을 반환하지는 않습니다.
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(360): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(359) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(360) : 참고: 이 줄에서 호출 피드
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(325): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(324) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(325) : 참고: 이 줄에서 호출 피드
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(306): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(303) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(306) : 참고: 이 줄에서 호출 피드
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(283): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(280) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(283) : 참고: 이 줄에서 호출 피드
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(251): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(250) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(251) : 참고: 이 줄에서 호출 피드
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(247): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(246) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(247) : 참고: 이 줄에서 호출 피드
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(427): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(420) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(427) : 참고: 이 줄에서 호출 피드
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(242): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(241) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(242) : 참고: 이 줄에서 호출 피드
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(194): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(193) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(194) : 참고: 이 줄에서 호출 피드
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(177): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(176) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(177) : 참고: 이 줄에서 호출 피드
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(169): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(161) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'driverTypeIndex' 범위
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(169) : 참고: 이 줄에서 호출 피드
-C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(164): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(161) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'driverTypeIndex' 범위
-  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(164) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(140,33): warning C4365: '초기화 중': 'LONG'에서 'UINT'(으)로의 변환입니다. signed 또는 unsigned가 일치하지 않습니다.
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(141,34): warning C4365: '초기화 중': 'LONG'에서 'UINT'(으)로의 변환입니다. signed 또는 unsigned가 일치하지 않습니다.
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(413,3): warning C5219: 'UINT'에서 'FLOAT'(으)로 암시적 변환이 수행되면 데이터가 손실될 수 있습니다.
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(482,16): warning C5219: 'ULONGLONG'에서 'float'(으)로 암시적 변환이 수행되면 데이터가 손실될 수 있습니다.
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(60): warning C4715: 'WindowProc': 모든 제어 경로에서 값을 반환하지는 않습니다.
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(549): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(542) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(549) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(445): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(444) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(445) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(442): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(441) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(442) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(434): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(433) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(434) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(403): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(402) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(403) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(388): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(387) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(388) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(367): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(366) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(367) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(339): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(338) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(339) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(310): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(307) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(310) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(287): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(284) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(287) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(253): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(252) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(253) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(249): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(248) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(249) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(244): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(243) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(244) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(196): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(195) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(196) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(179): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(178) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'hr' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(179) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(171): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(163) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'driverTypeIndex' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(171) : 참고: 이 줄에서 호출 피드
+C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(166): warning C5045: 컴파일러는 /Qspectre 스위치가 지정된 경우 메모리 로드를 위해 스펙터 완화를 삽입합니다.
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(163) : 참고: 이 줄에서 비교에 의해 검사된 인덱스 'driverTypeIndex' 범위
+  C:\GameGraphicProgramming\Source\Library\Game\Game.cpp(166) : 참고: 이 줄에서 호출 피드
   Library.vcxproj -> C:\GameGraphicProgramming\Build\x64\Debug\Libraryd.lib
   하위 디렉터리 또는 파일 C:\GameGraphicProgramming\Build\..\Library\x64\Debug이(가) 이미 있습니다.
   C:\GameGraphicProgramming\Build\x64\Debug\Game.exe
