@@ -27,7 +27,7 @@ ID3D11DepthStencilView* g_pDepthStencilView = nullptr;
 
 HWND g_hWnd = nullptr;
 HINSTANCE g_hInstance = nullptr;
-LPCWSTR g_pszWindowName = L"2022105448 김수연 Lab02";
+LPCWSTR g_pszWindowName = L"2022105448 김수연 Lab03";
 
 
 LPCWSTR g_pszWindowClassName = L"GGPWindowClass";
@@ -485,9 +485,9 @@ void Render()
 	g_worldMatrix = XMMatrixRotationY(t);
 
 	g_worldMatrix2 = XMMatrixScaling(0.3f, 0.3f, 0.3f);
-	g_worldMatrix2 *= XMMatrixRotationY(-t*5);
+	g_worldMatrix2 *= XMMatrixRotationZ(t*3); // 자전
 	g_worldMatrix2 *= XMMatrixTranslation(4.0f, 0.0f, 0.0f);
-	g_worldMatrix2 *= XMMatrixRotationY(t);
+	g_worldMatrix2 *= XMMatrixRotationY(-t*2); // 공전
 	
 
 
